@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ARENA FPS — make.fun entry</title>
+<style>
+  html, body { margin: 0; padding: 0; overflow: hidden; background: #0a0e14; }
+  canvas { display: block; }
+  #start { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+           background: rgba(10,14,20,0.85); color: #cfe; font: 16px monospace; z-index: 20; cursor: pointer; }
+  #start h1 { font-size: 42px; color: #ffd060; margin: 0 0 8px; }
+  #start p { margin: 4px 0; color: #9ab; }
+</style>
+</head>
+<body>
+<div id="start">
+  <h1>ARENA FPS</h1>
+  <p>Click to play. WASD move, mouse aim, click shoot, R reload, Space jump.</p>
+  <p>Survive waves. Score = kills &times; wave. Dying costs 50.</p>
+</div>
+<script>
+  document.getElementById('start').addEventListener('click', function () {
+    document.body.requestPointerLock();
+    this.remove();
+  });
+</script>
+<script type="module" src="./main.ts"></script>
+</body>
+</html>
