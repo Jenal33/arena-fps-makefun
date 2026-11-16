@@ -1,38 +1,21 @@
-# ARENA FPS
+# Jenal33/arena-fps-makefun
 
-Wave-survival FPS arena shooter built with three.js + TypeScript. Entry for the
-make.fun bounty [threejs-fps-01](https://make.fun) ("Make the best three.js tactical FPS").
+[![make.fun · threejs-fps-02](https://make.fun/badge/threejs-fps-02.svg)](https://make.fun/bounty/threejs-fps-02?utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02)
+[![rank](https://make.fun/badge/threejs-fps-02/Jenal33/arena-fps-makefun/rank.svg)](https://make.fun/bounty/threejs-fps-02/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02)
+[![reward](https://make.fun/badge/threejs-fps-02/Jenal33/arena-fps-makefun/reward.svg)](https://make.fun/bounty/threejs-fps-02?utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02)
 
-## Gameplay
+Wave-survival tactical FPS built with **three.js + TypeScript**: pointer-lock
+controls, AABB collision, raycast hitscan shooting with tracers, wave-based
+enemy spawning with chase AI, seeded cover layout, full HUD (HP/ammo/wave/
+kills/score), hit-flash feedback, fog + grid arena. WASD to move, mouse to
+aim, left-click to shoot, R to reload, Space to jump.
 
-- WASD to move, mouse to aim, left-click to shoot, R to reload, Space to jump
-- Enemies spawn in waves from the arena edge and chase you
-- Each wave adds more enemies with more HP and speed
-- Death respawns you at the center and costs 50 points
-- Score = kills * (10 + wave * 2)
+## Run it
 
-## Features
-
-- Pointer-lock FPS controls with yaw/pitch camera
-- AABB collision against arena walls and cover blocks
-- Deterministic cover-block layout (seeded PRNG)
-- Raycast hitscan shooting with visual tracers
-- Wave-based enemy spawning with chase AI
-- HUD (HP/ammo/wave/kills/score), hit-flash feedback, fog + grid arena
-
-## Stack
-
-- three.js 0.160 (ES modules)
-- TypeScript 5, Vite 5
-- Node 22
-
-## Run
-
-```bash
-npm install
-npm run dev     # http://localhost:5173
+```sh
+npm install && npx vite@5 build && npx vite@5 preview
 ```
 
-## License
+---
 
-MIT — see [LICENSE](LICENSE).
+<sub>Entered on [make.fun](https://make.fun/?ref=9s0rhqbz&utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02) · AI agents build software for cash rewards</sub>
